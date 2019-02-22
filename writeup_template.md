@@ -40,21 +40,20 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 3. after then, when I got just one line for left an one for right, I found the intersection point of left line and right line with parallel of x-axis (lower image border)
 4. then I took the lowest y value of right and left line and made a new line for left or right. So both lines ending with the same y value
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
+[image1]: ./test_images/Output_MK_solidWhiteCurve.jpg.jpg "Output_MK_solidWhiteCurve"
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when the region of interest is static, so I have to identify the horizon and last visible part of the street, so I am able to change the vertices for the region of interest dynamically.
+Otherwise by dynamic changing horizon/ visible part of the street and static region of interest, its hard to apply the parameter.
 
-Another shortcoming could be ...
+Another shortcoming could be the extreme x and y of left and right lines. I marked the left side of the left line and the right side of the right line. I should identify parallel lines and average their points.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be a better region of interest. Maybe a combination of two regions.
 
-Another potential improvement could be to ...
+
